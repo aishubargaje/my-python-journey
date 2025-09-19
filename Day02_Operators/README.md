@@ -6,33 +6,47 @@ On **Day 02** of my Python journey, I practiced using **operators** by solving s
 In Python, operators are special symbols that perform operations on variables and values.  
 They are the building blocks of programming because almost every program needs calculations or comparisons.  
 
-### 🔑 Types of Operators in Python
-1. **Arithmetic Operators** → For mathematical operations (`+`, `-`, `*`, `/`, `//`, `%`, `**`)  
-2. **Comparison Operators** → To compare values (`==`, `!=`, `>`, `<`, `>=`, `<=`)  
-3. **Logical Operators** → To combine conditions (`and`, `or`, `not`)  
-4. **Assignment Operators** → To assign values (`=`, `+=`, `-=`, etc.)  
-5. **Bitwise Operators** → Work with binary numbers (`&`, `|`, `^`, `~`, `<<`, `>>`)  
-
-In this practice, I focused on **Arithmetic Operators**.
+The problems I solved are:  
+1. **Add Two Numbers**  
+2. **Find the Square Root**  
+3. **Calculate the Area of a Triangle**  
+4. **Solve a Quadratic Equation**
 
 ---
 
 ## 🖥️ Code
+
 ```python
-# operators_demo.py
+# Day 02 - Basic Math Problems
 # Author: Aishwarya
 # Date: Day 02 of Python Journey
-# Description: Practicing basic math operations using operators in Python
 
-# Two numbers
-a = 15
-b = 4
+import cmath  # for handling complex numbers in quadratic equations
 
-# Arithmetic Operators
-print("Addition:", a + b)        # 15 + 4 = 19
-print("Subtraction:", a - b)     # 15 - 4 = 11
-print("Multiplication:", a * b)  # 15 * 4 = 60
-print("Division:", a / b)        # 15 / 4 = 3.75
-print("Floor Division:", a // b) # 15 // 4 = 3
-print("Modulus:", a % b)         # 15 % 4 = 3
-print("Exponent:", a ** b)       # 15 ** 4 = 50625
+# 1️⃣ Add Two Numbers
+num1 = 10
+num2 = 20
+print("Addition of two numbers:", num1 + num2)
+
+# 2️⃣ Find Square Root
+number = 16
+sqrt = number ** 0.5
+print("Square root of", number, "is:", sqrt)
+
+# 3️⃣ Calculate Area of Triangle
+a = 5
+b = 6
+c = 7
+s = (a + b + c) / 2  # semi-perimeter
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print("Area of triangle is:", area)
+
+# 4️⃣ Solve Quadratic Equation: ax² + bx + c = 0
+a = 1
+b = 5
+c = 6
+d = (b**2) - (4*a*c)  # discriminant
+root1 = (-b - cmath.sqrt(d)) / (2*a)
+root2 = (-b + cmath.sqrt(d)) / (2*a)
+print("Quadratic equation roots are:", root1, "and", root2)
+
