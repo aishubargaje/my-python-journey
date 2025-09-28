@@ -1,4 +1,4 @@
-🚀 Python Day 5 – Built-in & External Modules + pip
+# 🚀 Python Day 5 – Built-in & External Modules + pip
 
 Welcome to Day 5 of Python learning! 🎉
 In this repo, we explore Python modules – both built-in and external, and learn how to use the pip package manager effectively.
@@ -13,7 +13,7 @@ In this repo, we explore Python modules – both built-in and external, and lear
 
 ✅ Writing sample programs using modules
 
-🛠️ Built-in Module Examples
+## 🛠️ Built-in Module Examples
 
 Math Module – Perform square root, factorial, power functions.
 
@@ -21,7 +21,7 @@ Datetime Module – Get today’s date, time, format dates.
 
 OS Module – Work with files & directories.
 
-🌐 External Module Examples
+## 🌐 External Module Examples
 
 Requests – Fetch data from the web (API calls).
 
@@ -43,7 +43,7 @@ pip show numpy
 # Freeze environment packages
 pip freeze > requirements.txt
 
-🚀 How to Run Programs
+## 🚀 How to Run Programs
 
 Clone this repo
 
@@ -59,6 +59,6 @@ Run any Python file
 
 python filename.py
 
-📌 Author
+## 📌 Author
 
 👩‍💻 Aishwarya Bargaje
